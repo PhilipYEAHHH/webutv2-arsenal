@@ -106,3 +106,14 @@ a:hover {
     width: 85vw;
   }
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #000;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transform: none !important;
+  }
+}
