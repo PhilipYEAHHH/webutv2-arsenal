@@ -1,6 +1,7 @@
 :root {
   --primary-color: #fafafa;
   --titel-color: #e02b2b;
+  --btn-color: #ed8a8a;
 }
 * {
   margin: 0;
@@ -8,7 +9,7 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
   font-size: 16px;
@@ -48,15 +49,15 @@ header img {
   object-fit: cover;
 }
 
-p{
+p {
   font-family: "Roboto", sans-serif;
   font-size: clamp(1rem, 2.5vw, 2rem);
 }
-section iframe{
+section iframe {
   width: 300px;
   height: 300px;
 }
-map{
+map {
   width: 300px;
 }
 
@@ -68,7 +69,11 @@ section {
   align-items: center;
 }
 
-#Home{
+section img {
+  align-items: center;
+}
+
+#Home {
   height: fit-content;
 }
 
@@ -77,15 +82,18 @@ section img {
   min-width: 85%;
   object-fit: cover;
   margin-top: 1em;
+  display: flex;
+  margin: auto;
 }
 
-a{
-  color: #e02b2b;
+a {
+  color: #000000;
   font-size: 16px;
+  background-color: var(--btn-color);
+  border-radius: 2px;
 }
 
-a:hover
-{
+a:hover {
   color: blue;
 }
 
