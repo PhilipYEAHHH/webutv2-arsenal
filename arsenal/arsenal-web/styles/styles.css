@@ -2,6 +2,7 @@
   --primary-color: #fafafa;
   --titel-color: #e02b2b;
   --btn-color: #ed8a8a;
+  --text-color: #000;
 }
 * {
   margin: 0;
@@ -97,6 +98,45 @@ a:hover {
   color: blue;
 }
 
+/* this is just to show I know how to use grids but i did not have a good idea for them in my prodjekt :D  */
+.grid-contaner {
+  height: 100px;
+  width: 100px;
+  display: grid;
+  grid-template-areas:
+    "up up up"
+    "side1 midel side2"
+    "down down down";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 10px;
+}
+
+.up {
+  background-color: blue;
+  grid-area: up;
+}
+
+.side1 {
+  background-color: rgb(81, 195, 36);
+  grid-area: side1;
+}
+
+.side2 {
+  background-color: rgb(255, 0, 0);
+  grid-area: side2;
+}
+
+.midel {
+  background-color: tomato;
+  grid-area: midel;
+}
+
+.down {
+  background-color: rgb(0, 0, 0);
+  grid-area: down;
+}
+
 @media (min-width: 1000px) {
   section {
     width: 85vw;
@@ -109,6 +149,7 @@ a:hover {
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-color: #000;
+    --text-color: var(--primary-color);
   }
 }
 @media (prefers-reduced-motion: reduce) {
